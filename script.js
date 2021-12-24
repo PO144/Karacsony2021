@@ -7,10 +7,11 @@ var snow = new Snow.default({
     max_size: 5
 });
 
-var container = document.getElementsByClassName('container')[0];
+/*var container = document.getElementsByClassName('container')[0];
 document.addEventListener('click', function( event ) {
   if (container == event.target || container.contains(event.target)) {    
     snow.toggle();
     console.log("Test");
   }
-});
+});*/
+snow.toggle();
