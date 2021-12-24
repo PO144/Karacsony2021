@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+
+html, body {
+    height: 99%;
+    margin: 0;
+    background-image: url(backg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.grid-container {
+    width: 100%;
+    height: auto;
+    display: table;
+    text-align: center;
+}
+.grid-container > .grid-item {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+.grid-item-div{
+    border: 5px solid #163869;
+    width: fit-content;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Mountains of Christmas', cursive;
+    background: rgba(199, 202, 201, 0.301);
+}
+#karacsony{
+    margin: 10px 10px 10px 10px;
+    color: azure;
+    font-size: 100px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+@keyframes tree {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@-webkit-keyframes tree {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes tree {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+@-o-keyframes tree {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+#tree1{
+    height: 90px;
+    position: relative;
+    margin: 30px 0 0 40px;
+    -webkit-animation: tree 4s cubic-bezier(0.57, 0.00, 0.43, 1.00) infinite alternate;
+    animation: tree 4s cubic-bezier(0.57, 0.00, 0.43, 1.00) infinite alternate;
+    -moz-animation: tree 4s cubic-bezier(0.57, 0.00, 0.43, 1.00) infinite alternate;
+    -o-animation: tree 4s cubic-bezier(0.57, 0.00, 0.43, 1.00) infinite alternate;
+}
+#lights{
+    position: relative;
+    transform: rotate(30deg);
+    right: -30px;
+    top: -5px;
+    height: 100px;
+}
+.top-div{
+    height: 300px;
+}
